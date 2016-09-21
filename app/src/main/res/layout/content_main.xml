@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.zhangpeng.rememberwords.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="#eae4b8">
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                card_view:cardBackgroundColor="#c6e2d3"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="0dp"
+                card_view:cardElevation="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pic"
+                    android:scaleType="centerCrop"/>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25">
+
+                <android.support.v7.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                card_view:cardBackgroundColor="#8f9ac5"
+                                card_view:cardCornerRadius="0dp"
+                                card_view:cardPreventCornerOverlap="true"
+                                card_view:cardUseCompatPadding="true"
+                                card_view:contentPadding="10dp"
+                                card_view:cardElevation="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="距离考试还有:"
+                                        android:id="@+id/textView5"
+                                        android:gravity="center"
+                                        android:textSize="15dp"
+                                        android:layout_weight="1"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="200天"
+                                        android:id="@+id/textView6"
+                                        android:gravity="top|center"
+                                        android:textColor="#ffffff"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:textSize="30dp" />
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                card_view:cardBackgroundColor="#6dbfc6"
+                                card_view:cardCornerRadius="0dp"
+                                card_view:cardPreventCornerOverlap="true"
+                                card_view:cardUseCompatPadding="true"
+                                card_view:contentPadding="10dp"
+                                card_view:cardElevation="5dp"
+                                android:layout_gravity="center_horizontal"
+                    android:layout_weight="1">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="我已背单词："
+                                        android:id="@+id/textView8"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:textSize="15dp"
+                                        android:layout_weight="1" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="30天"
+                                        android:id="@+id/textView9"
+                                        android:gravity="top|center"
+                                        android:textStyle="bold"
+                                        android:textColor="#ffffff"
+                                        android:layout_weight="1"
+                                        android:textSize="30dp" />
+
+                                    <TextView
+                                                    android:layout_width="60dp"
+                                                    android:layout_height="20dp"
+                                                    android:text="选择天数"
+                                                    android:id="@+id/textView10"
+                                                    android:gravity="center"
+                                                    android:textColor="#ec6e45"
+                                                    android:textSize="13dp"
+                                                    android:background="@drawable/ju" />
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                android:layout_weight="0.4">
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card_view:cardBackgroundColor="#e58c98"
+                        card_view:cardCornerRadius="0dp"
+                        card_view:cardPreventCornerOverlap="true"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="10dp"
+                        card_view:cardElevation="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="生词本"
+                                android:id="@+id/textView48"
+                                android:textSize="25dp"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card_view:cardBackgroundColor="#fabd64"
+                        card_view:cardCornerRadius="0dp"
+                        card_view:cardPreventCornerOverlap="true"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="10dp"
+                        card_view:cardElevation="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="四级词汇"
+                                android:id="@+id/textView49"
+                                android:textSize="25dp"
+                                android:textColor="#ffffff"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="20dp"
+                                android:text="选择词库"
+                                android:id="@+id/textView7"
+                                android:gravity="center"
+                                android:textColor="#ec6e45"
+                                android:textSize="13dp"
+                                android:background="@drawable/ju" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="开始背单词"
+                    android:id="@+id/button"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ec6e45"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#b7b7b7"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="#5ca487"
+            android:id="@+id/linearLayout2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom|center_horizontal"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:id="@+id/lo1">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/textView"
+                    android:background="@mipmap/ic_today_white_18dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="学习"
+                    android:id="@+id/textView3"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:gravity="bottom|center_horizontal"
+                android:weightSum="1"
+                android:id="@+id/lo2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/textView2"
+                        android:background="@mipmap/ic_history_white_18dp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="复习"
+                        android:id="@+id/textView4"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
