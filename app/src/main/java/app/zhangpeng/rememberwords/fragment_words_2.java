@@ -20,7 +20,7 @@ public class fragment_words_2 extends  Fragment {
     private int[] text_voice;
     private int[] text_mean;
     private String[] means;
-    private boolean[] click;
+    public boolean[] click;
     private TextView[] word;
     private TextView pro;
     private TextView[] mean;
@@ -162,5 +162,11 @@ public class fragment_words_2 extends  Fragment {
             click[i]=true;
         }
 
+    }
+    public void hide(){//隐藏
+        for (int i=0;i<text_words.length;i++){
+            mean[i].setText("");
+            click[i]=false;
+        }
     }
 }
